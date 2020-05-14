@@ -1,1 +1,1 @@
-web: ./run.sh
+web: DEBUG=personalwebsite:* npm start 
