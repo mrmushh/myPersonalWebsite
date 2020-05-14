@@ -1,3 +1,3 @@
 #!/bin/bash
 
-DEBUG=personalwebsite:* npm start
+DEBUG=personalwebsite:* nodemon start
