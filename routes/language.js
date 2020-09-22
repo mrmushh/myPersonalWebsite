@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET language page. */
 router.get('/', function(req, res, next) {
-  res.render('index.ejs', { title: 'Matthew - Home' });
+  res.render('language.ejs', { title: 'Matthew - Language' });
 });
 
 module.exports = router;
