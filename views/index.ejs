@@ -1,33 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title><%= title %></title>
 <% include templates/csslinks.ejs %>
-<body class='w3-sand'>
-<% include templates/navbar.ejs %>
+<script>
+  function toggleNavLinks(){
+    let x = document.getElementById("nav-links");
+    if (x.className.indexOf("w3-show") == -1){
+      x.className += " w3-show"; 
+    }else{
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center" id="home">
-    <h1 class="w3-xxlarge">Matthew</h1>
-    <p>Hit 'em with that one line pitch!</p>
-    <img src="images/placeholder.jpg" alt="boy" class="w3-sepia-min w3-circle w3-image">
-    <div class="w3-left-align"> 
-      <p class="w3-small">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-    convallis massa vel dolor auctor placerat. Fusce tincidunt, nulla ut
-    feugiat pharetra, lectus dolor tristique arcu, sit amet accumsan orci
-    lectus vitae mauris. Etiam aliquet sagittis sem aliquam laoreet. Praesent
-    igula odio, auctor eget lectus ac, tincidunt molestie risus. Curabitur
-    rhoncus eros ut rutrum efficitur. Mauris aliquet sed justo nec vulputate.
-    Vivamus velit nulla, volutpat quis ligula vitae, semper vulputate felis.
-    In hac habitasse platea dictumst. Nullam maximus arcu quis libero
-    commodo, eget fringilla turpis cursus. Nulla sodales venenatis interdum.
-    Nulla metus felis, vestibulum in ante vel, maximus dignissim ante.
-    Curabitur suscipit ullamcorper semper.
-      </p>
+<body>
+  <!--<img src="/images/intro_background.jpg" alt="background" style="width:100%"> -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black">
+      <div class="w3-dropdown-click w3-right">
+        <button id="menu-button" onclick="toggleNavLinks()" class="w3-button">
+          <i class="material-icons">menu</i>
+        </button>
+        <div id="nav-links" class="w3-dropdown-content w3-center" style="right:0">
+          <a href="#profile" onclick="toggleNavLinks()" class="w3-bar-item w3-button w3-mobile">Profile</a>
+          <a href="#experiences" onclick="toggleNavLinks()" class="w3-bar-item w3-button w3-mobile">Experiences</a>
+          <a href="#skills" onclick="toggleNavLinks()" class="w3-bar-item w3-button w3-mobile">Skills</a>
+          <a href="#projects" onclick="toggleNavLinks()" class="w3-bar-item w3-button w3-mobile">Projects</a>
+          <a href="#contact" onclick="toggleNavLinks()" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+      </div>
     </div>
-  </header>
-</div>
+  </div>
+  <div class="w3-container w3-center anchor">
+    <h1>Matthew R. Abrahamsen</h1>
+    <hr>
+    <h2>Interactive Resume</h2>
+    <h2><a id="profile" class="anchor"></a>Profile</h2>
+    <p>I am a web app developer focusing on thoughtful design and secure functionality</p>
+    <h3>About me</h3>
+    <p>
+      I am a developer who focuses on making technology work for small businesses. I provide low-cost and maintainable solutions that make managing a business much easier. I love working one-on-one with company leaders to discover what will work best for them. In the past I have added online ordering to websites, built helpful web apps to connect IoT devices,  integrated Point-of-Sales systems, and troubleshooted network and security issues. My dream is to become an information security specialist and share my expertise with others to grow, improve, and safeguard their businesses. 
+    </p>
+    <h3>Details</h3>
+    <img src="/images/gon.jpg" alt="Matthew R. Abrahamsen" width="246" height="246">
+    <p>
+      <strong>Name:</strong><br>
+      Matthew R. Abrahamsen
+      <br>
+      <strong>Age:</strong><br>
+      25 years
+      <br>
+      <strong>Location:</strong><br>
+      Washington, DC<br>
+      <!--links linkedin and github-->
+    </p>
+    <h2><a id="experiences" class="anchor"></a>Experiences</h2>
+    <p>
+      "Finis origine pendet"
+      <br>
+      "The end depends on the beginning"
+      <br>
+      Phillips Academy Andover Motto
+    </p>
+    <hr>
+    <h3>Education</h3>
+    <div class="w3-left-align">
+    <h4>Claremont McKenna College</h4>
+    <p>
+      January 2014 - May 2019 <br>
+      <strong>Bachelor of Arts - International Relations</strong> <br>
+      <strong>Minors - Russian, Computer Science</strong> <br>
+      Claremont, CA
+    </p>
+    <h4>California State University</h4>
+    <p>
+      January 2018 - June 2018 <br>
+      <strong>Extended Education Program - Computer Science </strong> <br>
+      Fullerton, CA
+    </p>
+    <h4>Kazan Federal University</h4>
+    <p>
+      September 2013 - May 2014 <br>
+      <strong>US State Department Fellowship NSLI-Y - Russian</strong><br>
+      Kazan, Russia
+    </p>
+    <h4>Phillips Academy Andover</h4>
+    <p>
+      September 2010 - June 2013<br>
+      <strong>Private Boarding School</strong><br>
+      Andover, MA
+    </p>
+    </div>
+    <hr>
+    <h3>Career</h3>
+    <div class="w3-left-align">
+    <h4>Technology Consultant, Web App Developer</h4>
+    <p>
+      January 2020 - Present<br>
+      <a href="https://www.laosintown.com/" target="_blank" rel="noopener noreferrer">Laos in Town - Restaurant</a><br>
+      Washington, DC
+    </p>
+    <h4>Point of Sale (POS) Consultant</h4>
+    <p>
+      November 2019 - December 2019 <br>
+      <a href="https://romanticdepot.com/bronx/" target="_blank" rel="noopener noreferrer">Romantic Depot - Adult Novelty Retail</a><br>
+      Bronx, NY
+    </p>
+    <h4>Teaching Assistant (TA), Resident Assistant (RA)</h4>
+    <p>
+      June 2019 - July 2019 <br>
+      <a href="https://www.ucis.pitt.edu/creees/outreach/startalk" target="_blank" rel="noopener noreferrer">University of Pittsburgh - STARTALK Russian Language Program</a><br>
+      Pittsburgh, PA
+    </p>
+    <h4>Information Technology Assistant</h4>
+    <p>
+      June 2017 - August 2017 <br>
+      <a href="https://www.cmc.edu/information-technology" target="_blank" rel="noopener noreferrer">Claremont McKenna College - Information Technology Services</a><br>
+      Claremont, CA
+    </p>
+    <h4>Languague Partner</h4>
+    <p>
+      September 2016 - May 2019 <br>
+      <a href="https://www.pomona.edu/administration/oldenborg-center" target="_blank" rel="noopener noreferrer">Oldenborg - Pomona College Foreign Language Resource Center</a><br>
+      Claremont, CA
+    </p>
+    </div>
+    <h2><a id="skills" class="anchor"></a>Skills</h2>
+    <div class="w3-left-align">
+    <h3>Software Development</h3>
+    <hr>
+    <ul class=no-bullets>
+      <li>Javascript</li>
+      <li>Node.js</li>
+      <li>HTML(5)</li>
+      <li>CSS(3)</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>Heroku</li>
+      <li>Vim</li>
+      <li>Bash</li>
+      <li>Wix</li>
+      <li>SEO</li>
+      <li>MySQL</li>
+      <li>RabbitMQ</li>
+      <li>Racket</li>
+      <li>Object Oriented Programming</li>
+      <li>Web Scraping</li>
+    </ul>
+    <h3>Information Technology</h3>
+    <hr>
+    <ul class=no-bullets>
+      <li>CompTIA Security+ Certified</li>
+      <li>Linux CLI</li>
+      <li>Raspberry Pi</li>
+      <li>IoT</li>
+      <li>Nmap</li>
+      <li>Buffer Overflow</li>
+      <li>Burp Suite</li>
+    </ul>
+    <h3>Language</h3>
+    <hr>
+    <ul class=no-bullets>
+      <li>English (Native)</li>
+      <li>Russian (Advanced)</li>
+      <li>Spanish (Heritage)</li>
+      <li>Japanese (Beginner)</li>
+    </ul>
+    </div>
+    <h2><a id="projects" class="anchor"></a>Projects</h2>
+    <figure>
+      <img src="images/laos_flow.png" alt="Delivery Services and Printer Integration" style="width:100%">
+      <figcaption>How I Integrated UberEats, Grubhub, and Square ECommerce into a Uniform Automated Receipt Printing</figcaption>
+    </figure> 
+    <figure>
+      <img src="images/laos_tips.png" alt="Laos Tips" style="width:100%">
+      <figcaption>Making an Automated Tipout Calculator for Laos in Town Restaurant</figcaption>
+    </figure> 
+    <figure>
+      <img src="images/killua.png" alt="Romantic Depot" style="width:100%">
+      <figcaption>Working as a Team to Migrate a 30-year-old MS-DOS Retail Software to a Modern POS System</figcaption>
+    </figure> 
+    <h2><a id="contact" class="anchor"></a>Contact</h2>
+    <a href = "mailto: matthewrabrahamsen@gmail.com">matthewrabrahamsen@gmail.com</a>
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+  </div>
 </body>
+
 </html>
