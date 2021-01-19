@@ -2,15 +2,16 @@
 <html lang="en">
 <title><%= title %></title>
 <% include templates/csslinks.ejs %>
+
 <script>
-  function toggleNavLinks(){
-    let x = document.getElementById("nav-links");
-    if (x.className.indexOf("w3-show") == -1){
-      x.className += " w3-show"; 
-    }else{
-      x.className = x.className.replace(" w3-show", "");
-    }
+function toggleNavLinks() {
+  var x = document.getElementById("nav-links");
+  if (x.className.indexOf("w3-show") === -1) { 
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
   }
+}
 </script>
 
 <body>
