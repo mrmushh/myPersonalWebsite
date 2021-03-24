@@ -1,6 +1,40 @@
+html, body, h1, h2, h3, h4, h5, h6, p
+{
+  color: #434242;
+  font-family: 'Open Sans', sans-serif !important;
+}
 html
 {
   scroll-behavior: smooth;
+}
+body
+{
+  margin:0;
+  line-height: 1.64;
+}
+h1
+{
+  color: #6a8e7f;
+}
+h2
+{
+  font-size : 54px;
+  font-weight: 200;
+  line-height: 1.1;
+  color: #c83e4d;
+}
+h3
+{
+  font-size:28px;
+  color: #6a8e7f;
+}
+h4
+{
+  color: #f79d5c;
+}
+p.lead
+{
+  color: #727878;
 }
 ul.no-bullets
 {
@@ -8,12 +42,62 @@ ul.no-bullets
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
+.hero-image {
+
+  background-color: white;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image::before {
+  content: "";
+  background-image : url("/images/white-paint.jpg");
+  background-size: cover;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.50;
+}
+.hero-text{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+#hero-hr{
+  border-top: 1px solid #aaa;
+}
 .anchor
 {
-  padding-top: 62px;
+  padding-top: 57.25px;
+}
+.background-1
+{
+  background-color: white;
+}
+.background-2
+{
+  background-color:#f2f7f5;
+}
+.circle {
+  border-radius: 50%;
+}
+.contact-card {
+  height: 100vh;
 }
 #menu-button
 {
   margin: 4px;
   padding: 4px 6px 0px 6px;
+}
+#nav-links a
+{
+  font-size: 20px;
 }
