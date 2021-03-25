@@ -37,6 +37,9 @@ h4{
 p.lead{
   color: var(--my-blue-lead);
 }
+section {
+  padding-top: 42.3px; /* height of the navbar */
+}
 ul.no-bullets{
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
@@ -75,7 +78,7 @@ ul.no-bullets{
 .anchor{ padding-top: 57.25px; }
 .background-1{ background-color: var(--my-background-1);}
 .background-2{ background-color: var(--my-background-2);}
-.circle { border-radius: 50%;}
+.circle {border-radius: 50%;}
 .contact-card { height: 100vh; }
 
 #menu-button{
