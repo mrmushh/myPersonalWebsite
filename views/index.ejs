@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title><%= title %></title>
 <% include templates/csslinks.ejs %>
-
+<script src="https://kit.fontawesome.com/10c514f3f0.js" crossorigin="anonymous"></script>
 <script>
 function toggleNavLinks() {
   var x = document.getElementById("nav-links");
@@ -13,7 +14,8 @@ function toggleNavLinks() {
   }
 }
 </script>
-
+<script type="text/javascript" src="/js/skills.js"></script>
+</head>
 <body>
   <!--<img src="/images/intro_background.jpg" alt="background" style="width:100%"> -->
   <div id="nav-bar" class="w3-top w3-2021-inkwell">
@@ -36,7 +38,7 @@ function toggleNavLinks() {
     <div class="w3-containter w3-center anchor hero-text">
       <h1>Matthew R. Abrahamsen</h1>
       <hr id="hero-hr">
-      <p>Interactive Resume</p>
+      <p id="hero-caption">Interactive Resume</p>
     </div>
   </div>
 
@@ -143,49 +145,22 @@ function toggleNavLinks() {
 
   <section id="skills" class="background-1 w3-center">
     <div class="w3-container">
-    <h2>Skills</h2>
-    <div class="w3-left-align">
-    <h3>Software Development</h3>
-    <hr>
-    <ul class=no-bullets>
-      <li>Javascript</li>
-      <li>Node.js</li>
-      <li>HTML(5)</li>
-      <li>CSS(3)</li>
-      <li>Python</li>
-      <li>Java</li>
-      <li>C</li>
-      <li>Heroku</li>
-      <li>Vim</li>
-      <li>Bash</li>
-      <li>Wix</li>
-      <li>SEO</li>
-      <li>MySQL</li>
-      <li>RabbitMQ</li>
-      <li>Racket</li>
-      <li>Object Oriented Programming</li>
-      <li>Web Scraping</li>
-    </ul>
-    <h3>Information Technology</h3>
-    <hr>
-    <ul class=no-bullets>
-      <li>CompTIA Security+ Certified</li>
-      <li>Linux CLI</li>
-      <li>Raspberry Pi</li>
-      <li>IoT</li>
-      <li>Nmap</li>
-      <li>Buffer Overflow</li>
-      <li>Burp Suite</li>
-    </ul>
-    <h3>Language</h3>
-    <hr>
-    <ul class=no-bullets>
-      <li>English (Native)</li>
-      <li>Russian (Advanced)</li>
-      <li>Spanish (Heritage)</li>
-      <li>Japanese (Beginner)</li>
-    </ul>
-    </div>
+      <h2>Skills</h2>
+      <div class="w3-left-align">
+        <h3>Software Development</h3>
+        <hr>
+        <!--look in skills.js for rendered skill elements-->
+        <div id="softwareSkills"></div>
+        <h3>Information Technology</h3>
+        <hr>
+        <div id="ITSkills"></div>
+        <ul class=no-bullets>
+          <li>CompTIA Security+ Certified</li>
+        </ul>
+        <h3>Language</h3>
+        <hr>
+        <div id="languageSkills"></div>
+      </div>
     </div>
   </section>
 

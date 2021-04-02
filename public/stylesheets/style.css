@@ -45,6 +45,11 @@ ul.no-bullets{
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
+.fa-star {
+  color: var(--my-light-orange);
+  font-size: 0.875em;
+  padding-right: 3px;
+}
 .hero-image {
   background-color: white;
   height: 100vh;
@@ -73,7 +78,6 @@ ul.no-bullets{
   left:50%;
   transform: translate(-50%, -50%);
 }
-
 #hero-hr{ border-top: 1px solid #aaa; }
 .anchor{ padding-top: 57.25px; }
 .background-1{ background-color: var(--my-background-1);}
@@ -81,6 +85,9 @@ ul.no-bullets{
 .circle {border-radius: 50%;}
 .contact-card { height: 100vh; }
 
+#hero-caption{
+  font-size: 20px;
+}
 #menu-button{
   margin: 4px;
   padding: 4px 6px 0px 6px;
