@@ -18,6 +18,7 @@ var softwareSkills = [
 {name: "Web Scraping", level: 3}
 ];
 var ITSkills = [
+{name: "CompTIA Security+ Certified", level:5},
 {name: "Linux CLI", level: 5},
 {name: "Raspberry Pi", level: 5},
 {name: "IoT", level: 5},
